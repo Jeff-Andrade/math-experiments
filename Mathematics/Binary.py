@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class decimal_binary:
+class DecimalBinary:
 
     def __init__(self, number):
 
