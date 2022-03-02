@@ -5,7 +5,7 @@ class Riemann:
         self.function = function
         self.bounds = bounds
         self.rectangleAmount = rectangle_amount
-        self.rectangleLength = (bounds[1] - bounds[0])/self.rectangleAmount
+        self.rectangleLength = (bounds[0] - bounds[1])/self.rectangleAmount
 
     def summation(self):
 
