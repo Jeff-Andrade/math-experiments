@@ -52,8 +52,8 @@ class FrequencyTable:
 
         for intervals in range(len(self.classLines)):
 
-            self.classLines[intervals][3] = str(
-                (round(self.classLines[intervals][2]/len(self.data), 3))*100) + " %"
+            self.classLines[intervals][3] = (
+                round(self.classLines[intervals][2]/len(self.data), 3))*100
 
     def generate_stats(self):
 
@@ -100,7 +100,7 @@ class FrequencyTable:
             dfFrequency[0] = dfFrequency[0].round(3)
             dfFrequency[1] = dfFrequency[1].round(3)
             dfFrequency.columns = ["Lower Bound", "Upper Bound",
-                                   "Absolute Frequency", "Relative Frequency"]
+                                   "Absolute Frequency", "Relative Frequency (%)"]
             dfFrequency.index = range(1, len(dfFrequency.index) + 1)
 
             return dfFrequency
