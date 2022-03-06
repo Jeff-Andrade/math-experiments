@@ -128,7 +128,13 @@ class FrequencyTable:
 
     def run(self):
 
-        self.generate_interval()
-        self.generate_frequencies()
+        if len(self.classLines) == 0:
 
-        return self.get_output()
+            self.generate_interval()
+            self.generate_frequencies()
+
+            return self.get_output()
+
+        else:
+
+            return self.get_output()
