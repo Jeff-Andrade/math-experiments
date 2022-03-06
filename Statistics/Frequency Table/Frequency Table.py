@@ -86,7 +86,7 @@ class FrequencyTable:
 
                 summation += (self.data[samples] - calculate_mean())**2
 
-            result = round(math.sqrt((summation/len(self.data) - 1)), 3)
+            result = round(math.sqrt((summation/(len(self.data) - 1))), 3)
 
             return result
 
