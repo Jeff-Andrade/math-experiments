@@ -32,5 +32,4 @@ getTable = function(data)
     
     print(df)
     
-   
-    }
+}
