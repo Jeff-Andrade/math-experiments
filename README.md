@@ -5,7 +5,6 @@ Mathematics:
 
     - Binary.py: converts a number from decimal to binary;
     - Collatz.py: implements the algorithm of the Collatz Conjecture;
-    - Combinations.py: takes an array and uses the random module to generate and return its permutations;
     - Riemman Sum.py: given a function, a list containing the upper and lower bounds (respectively) and the desired amount of rectangles,
       approximates the area under the given function.
 
